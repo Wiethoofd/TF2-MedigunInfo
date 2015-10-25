@@ -2,16 +2,22 @@
 * text=auto
 
 # Custom for Visual Studio
-*.cs     diff=csharp
+*.cs	diff=csharp
 
 # Standard to msysgit
-*.doc	 diff=astextplain
-*.DOC	 diff=astextplain
-*.docx diff=astextplain
-*.DOCX diff=astextplain
-*.dot  diff=astextplain
-*.DOT  diff=astextplain
-*.pdf  diff=astextplain
-*.PDF	 diff=astextplain
-*.rtf	 diff=astextplain
-*.RTF	 diff=astextplain
+*.cfg	diff=astextplain
+*.CFG	diff=astextplain
+*.doc	diff=astextplain
+*.DOC	diff=astextplain
+*.docx	diff=astextplain
+*.DOCX	diff=astextplain
+*.dot	diff=astextplain
+*.DOT	diff=astextplain
+*.pdf	diff=astextplain
+*.PDF	diff=astextplain
+*.res	diff=astextplain
+*.RES	diff=astextplain
+*.rtf	diff=astextplain
+*.RTF	diff=astextplain
+*.vmt	diff=astextplain
+*.VMT	diff=astextplain

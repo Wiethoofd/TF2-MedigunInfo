@@ -11,7 +11,7 @@
 		"visible"	"1"
 		"enabled"	"1"
 		"tabPosition"	"0"
-		
+
 		"player-dead"
 		{
 			//"visible"       "0"
@@ -32,7 +32,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"fillcolor"		"30 30 30 255"
-		
+
 		"player-dead"
 		{
 			"visible"       "0"
@@ -48,14 +48,14 @@
 		"zpos"			"10"
 		"wide"			"152"
 		"tall"			"18"
-		"autoResize"	"0"
+		"autoResize"		"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"bordercolor"		"33 33 33 255"
 		"border"		"QuickplayBorder"
 	}
-	
+
 	"MedigunPanelBackground"
 	{
 		"ControlName" 	"ScalableImagePanel"
@@ -69,13 +69,13 @@
 		"pinCorner"		"0"
 		"visible" 		"1"
 		"enabled" 		"1"
-		
+
 		"image"			"../HUD/color_panel_brown"
-		
+
 		"scaleImage"		"1"
 		"src_corner_height"	"22"	// pixels inside the image
 		"src_corner_width"	"22"
-		
+
 		"draw_corner_width"	"0"	// screen size of the corners ( and sides ), proportional
 		"draw_corner_height" 	"0"
 
@@ -184,10 +184,10 @@
 	{
 		"ControlName"	"VariableLabel"
 		"fieldName"		"MedigunPanelChargeLabel"
-		"xpos"			"127"
+		"xpos"			"126"
 		"ypos"			"0"
 		"zpos"			"3"
-		"wide"			"28"
+		"wide"			"29"
 		"tall"			"18"
 		"autoResize"		"1"
 		"visible"		"1"
@@ -199,7 +199,7 @@
 		"brighttext"		"0"
 		"font"			"HudFontSmallestBold"
 		"fgcolor_override"	"TanLight"
-		
+
 		"player-dead"
 		{
 			"visible"   "0"
@@ -208,11 +208,11 @@
 	"MedigunPanelChargeLabelShadow"
 	{
 		"ControlName"	"VariableLabel"
-		"fieldName"		"MedigunPanelChargeLabel"
-		"xpos"			"128"
+		"fieldName"		"MedigunPanelChargeLabelShadow"
+		"xpos"			"127"
 		"ypos"			"1"
 		"zpos"			"2"
-		"wide"			"28"
+		"wide"			"29"
 		"tall"			"18"
 		"autoResize"		"1"
 		"visible"		"1"
@@ -249,7 +249,7 @@
 		"dulltext"		"0"
 		"brighttext"		"0"
 		"bgcolor_override"	"30 30 30 180"
-		"fgcolor_override" 	"137 127 117 255"
+		"fgcolor_override" 	"153 145 125 255"
 		"direction"		"north"
 		"variable"		"charge"
 
@@ -258,7 +258,7 @@
 			"visible"       "0"
 		}
 	}
-	
+
 	"MedigunPanelNameLabel"
 	{
 		"ControlName"	"VariableLabel"
@@ -278,17 +278,17 @@
 		"brighttext"		"0"
 		"font"			"Default"
 		"fgcolor_override"	"TanLight"
-			
+
 		"medigun-medigun"
 		{
 			"labelText"	"Medi Gun"
 		}
-		
+
 		"medigun-kritzkrieg"
 		{
 			"labelText"	"Kritzkrieg"
 		}
-		
+
 		"medigun-quickfix"
 		{
 			"labelText"	"Quick-Fix"

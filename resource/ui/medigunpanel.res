@@ -39,6 +39,7 @@
 		}
 	}
 
+
 	"PanelBorder"
 	{
 		"ControlName"	"ImagePanel"
@@ -46,15 +47,23 @@
 		"xpos"			"0"
 		"ypos"			"0"
 		"zpos"			"10"
-		"wide"			"152"
-		"tall"			"18"
+		"wide"			"f0"
+		"tall"			"f0"
 		"autoResize"		"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"bordercolor"		"33 33 33 255"
 		"border"		"QuickplayBorder"
+		"proportionaltoparent"	"1"
+		
+		// Charge being used (does not work for Vaccinator)
+		"status-released"
+		{
+			"border"	"ComboBoxBorder"
+		}
 	}
+
 
 	"MedigunPanelBackground"
 	{
@@ -69,6 +78,7 @@
 		"pinCorner"		"0"
 		"visible" 		"1"
 		"enabled" 		"1"
+		"proportionaltoparent"	"1"
 
 		"image"			"../HUD/color_panel_brown"
 
@@ -102,29 +112,17 @@
 		"enabled"		"1"
 		"scaleImage"		"1"
 
-
-		"medigun-medigun"
-		{
-			"xpos"		"2"
-			"image"		"replay/thumbnails/uber"
-			"team-red" {
-				"drawcolor"	"188 66 66 255"
-			}
-			"team-blu" {
-				"drawcolor"	"79 117 144 255"
-			}
+		"image"			"replay/thumbnails/uber"
+		"team-red" {
+			"drawcolor"	"188 66 66 255"
+		}
+		"team-blu" {
+			"drawcolor"	"79 117 144 255"
 		}
 
 		"medigun-kritzkrieg"
 		{
-			"wide"		"16"
 			"image"		"replay/thumbnails/kritz"
-			"team-red" {
-				"drawcolor"	"188 66 66 255"
-			}
-			"team-blu" {
-				"drawcolor"	"79 117 144 255"
-			}
 		}
 
 		"medigun-quickfix"
@@ -132,14 +130,8 @@
 			"ypos"		"0"
 			"tall"		"17"
 			"wide"		"17"
-			"image"		"replay/thumbnails/quickfix"
-			"team-red" {
-				"drawcolor"	"188 66 66 255"
-			}
 
-			"team-blu" {
-				"drawcolor"	"79 117 144 255"
-			}
+			"image"		"replay/thumbnails/quickfix"
 		}
 
 		"medigun-vaccinator"
@@ -147,6 +139,8 @@
 			"ypos"		"0"
 			"wide"		"17"
 			"tall"		"17"
+			"drawcolor_override"	""
+
 			"team-red"
 			{
 				"resist-bullet" {
@@ -209,8 +203,8 @@
 	{
 		"ControlName"	"VariableLabel"
 		"fieldName"		"MedigunPanelChargeLabelShadow"
-		"xpos"			"127"
-		"ypos"			"1"
+		"xpos"			"-1"
+		"ypos"			"-1"
 		"zpos"			"2"
 		"wide"			"29"
 		"tall"			"18"
@@ -224,6 +218,10 @@
 		"brighttext"		"0"
 		"font"			"HudFontSmallestBold"
 		"fgcolor_override"	"Black"
+
+		"pin_to_sibling" 	"MedigunPanelChargeLabel"
+		"pin_corner_to_sibling" "PIN_TOPLEFT"
+		"pin_to_sibling_corner" "PIN_TOPLEFT"
 
 		"player-dead"
 		{
@@ -264,10 +262,10 @@
 		"ControlName"	"VariableLabel"
 		"fieldName"		"MedigunPanelNameLabel"
 		"xpos"			"20"
-		"ypos"			"2"
+		"ypos"			"0"
 		"zpos"			"3"
 		"wide"			"200"
-		"tall"			"14"
+		"tall"			"f0"
 		"autoResize"		"1"
 		"labelText"		"Medi Gun"
 		"visible"		"1"
@@ -278,6 +276,7 @@
 		"brighttext"		"0"
 		"font"			"Default"
 		"fgcolor_override"	"TanLight"
+		"proportionaltoparent"	"1"
 
 		"medigun-medigun"
 		{

@@ -35,7 +35,7 @@
 
 		"player-dead"
 		{
-			"visible"       "0"
+			//"visible"       "0"
 		}
 	}
 
@@ -56,7 +56,7 @@
 		"bordercolor"		"33 33 33 255"
 		"border"		"QuickplayBorder"
 		"proportionaltoparent"	"1"
-		
+
 		// Charge being used (does not work for Vaccinator)
 		"status-released"
 		{
@@ -106,7 +106,7 @@
 		"xpos"			"1"
 		"ypos"			"1"
 		"zpos"			"2"
-		"wide"			"15"
+		"wide"			"16"
 		"tall"			"16"
 		"visible"		"1"
 		"enabled"		"1"
@@ -120,57 +120,62 @@
 			"drawcolor"	"79 117 144 255"
 		}
 
-		"medigun-kritzkrieg"
+		"player-alive"
 		{
-			"image"		"replay/thumbnails/kritz"
-		}
-
-		"medigun-quickfix"
-		{
-			"ypos"		"0"
-			"tall"		"17"
-			"wide"		"17"
-
-			"image"		"replay/thumbnails/quickfix"
-		}
-
-		"medigun-vaccinator"
-		{
-			"ypos"		"0"
-			"wide"		"17"
-			"tall"		"17"
-			"drawcolor_override"	""
-
-			"team-red"
+			"medigun-kritzkrieg"
 			{
-				"resist-bullet" {
-					"image" "../HUD/defense_buff_bullet_red"
-				}
-				"resist-explosive" {
-					"image" "../HUD/defense_buff_explosion_red"
-				}
-				"resist-fire" {
-					"image" "../HUD/defense_buff_fire_red"
-				}
+				"image"		"replay/thumbnails/kritz"
 			}
 
-			"team-blu"
+			"medigun-quickfix"
 			{
-				"resist-bullet" {
-					"image" "../HUD/defense_buff_bullet_blue"
+				//"ypos"		"0"
+				//"wide"		"17"
+				//"tall"		"17"
+
+				"image"		"replay/thumbnails/quickfix"
+			}
+
+			"medigun-vaccinator"
+			{
+				"ypos"		"0"
+				"wide"		"17"
+				"tall"		"17"
+				"drawcolor_override"	""
+
+				"team-red"
+				{
+					"resist-bullet" {
+						"image" "../HUD/defense_buff_bullet_red"
+					}
+					"resist-explosive" {
+						"image" "../HUD/defense_buff_explosion_red"
+					}
+					"resist-fire" {
+						"image" "../HUD/defense_buff_fire_red"
+					}
 				}
-				"resist-explosive" {
-					"image" "../HUD/defense_buff_explosion_blue"
-				}
-				"resist-fire" {
-					"image" "../HUD/defense_buff_fire_blue"
+
+				"team-blu"
+				{
+					"resist-bullet" {
+						"image" "../HUD/defense_buff_bullet_blue"
+					}
+					"resist-explosive" {
+						"image" "../HUD/defense_buff_explosion_blue"
+					}
+					"resist-fire" {
+						"image" "../HUD/defense_buff_fire_blue"
+					}
 				}
 			}
 		}
 
 		"player-dead"
 		{
-			"visible"       "0"
+			"wide"		"16"
+			"drawcolor_override"	"130 130 130 225"
+			"image"		"replay/thumbnails/deadshield"
 		}
 	}
 
